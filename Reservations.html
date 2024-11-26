@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Reservations
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/Reservations.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<img src="./images/logo.jpg" class="logo" />
+			<div class="nav-items">
+				<a href="./index.html" class="nav-link">Menu</a>
+				<a href="./Reservations.html" class="nav-link">Reservation</a>
+				<a href="./customers.html" class="nav-link">Reviews</a>
+				<a href="./blog.html" class="nav-link">Blog</a>
+			</div>
+		</nav>
+		<div id="greeting">
+			<h1>
+			Book a Reservation with Us Today!
+			</h1> 
+		</div>
+		<br/><br/>
+		<div id="otherMethods">
+			<h3>Book In-Person:</h3>
+			<p id="address">Walk-in: 2000 Simcoe St N, Oshawa, ON L1G 0C5 </p>
+			<h3>Book over the phone:</h3>
+			<p id="telephoneNum"> Call us at: <a href="tel+9054447777">905-444-7777</a></p>
+		</div>
+		<br/><br/>
+		<div class="formAndPicture">
+			<div class="imageFormat">
+				<img src="./images/Reservation1.jpg" alt="Dining room">
+			</div>
+			<h2>
+				Book Online:
+			</h2>	
+			<div class="formFormat">
+				<form id="reservationForm">
+					<fieldset>
+						<h3>Reservation Information</h3>
+						<label for="numberOfPeople" class="people">Select the number of people in reservation</label>
+						<select name="people" id="numberOfPeople">
+							<option value="" disabled>Choose an option:</option>
+							<option value="1" selected="selected">1 person</option>
+							<option value="2">2 people</option>
+							<option value="3">3 people</option>
+							<option value="4">4 people</option>
+							<option value="5">5 people</option>
+							<option value="6">6 people</option>
+							<option value="7">7 people</option>
+							<option value="8">8 people</option>
+							<option value="9">9 people</option>
+							<option value="10">10 people</option>
+							<option value="11">11 people</option>
+							<option value="12">12 people</option>
+							<option value="13">13 people</option>
+							<option value="14">14 people</option>
+							<option value="15">15 people</option>
+							<option value="16">16 people</option>
+							<option value="17">17 people</option>
+							<option value="18">18 people</option>
+							<option value="19">19 people</option>
+							<option value="20">20 people</option>
+						</select>
+						<br/><br/>
+						<label for="date" class="date">Select the date:</label>
+						<input type="date" id="dateSelected" name="dateSelected" required/>
+						<br/><br/>
+						<label for="time" class="time">Select a time:</label>
+						<select name="allTimes" id="time">
+							<option value="09:00">9:00 am</option>
+							<option value="09:30">9:30 am</option>
+							<option value="10:00">10:00 am</option>
+							<option value="10:30">10:30 am</option>
+							<option value="11:00">11:00 am</option>
+							<option value="11:30">11:30 am</option>
+							<option value="12:00">12:00 pm</option>
+							<option value="12:30">12:30 pm</option>
+							<option value="13:00">1:00 pm</option>
+							<option value="13:30">1:30 pm</option>
+							<option value="14:00">2:00 pm</option>
+							<option value="14:30">2:30 pm</option>
+							<option value="15:00">3:00 pm</option>
+							<option value="15:30">3:30 pm</option>
+							<option value="16:00">4:00 pm</option>
+							<option value="16:30">4:30 pm</option>
+							<option value="17:00">5:00 pm</option>
+							<option value="17:30">5:30 pm</option>
+							<option value="18:00">6:00 pm</option>
+							<option value="18:30">6:30 pm</option>
+							<option value="19:00">7:00 pm</option>
+							<option value="19:30">7:30 pm</option>
+							<option value="20:00">8:00 pm</option>
+						</select>	
+						<br/>
+						<h3>Contact Information</h3>
+						<label for="firstName" class="firstName">Enter your first name:</label>
+						<input type="text" id="firstName" name="name" placeholder="First name" required />
+						<br/><br/>
+						<label for="lastName" class="lastName">Enter your last name:</label>
+						<input type="text" id="lastName" name="name" placeholder="Last name" required />
+						<br/><br/>
+						<label for="phoneNum" class="phoneNum">Enter your phone number:</label>
+						<input type="text" id="phoneNum" name="phoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="000-000-0000" title="Please enter a valid phone number. Ex: 000-000-0000" required/>
+						<br/><br/>
+						<label for="emailAdd" class="emailAdd">Enter your email address:</label>
+						<input type="text" id="emailAdd" name="emailAdd" pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}$" placeholder="yourname@email.com" title="Please enter a valid email address. Ex: yourname@email.com" required/>
+						<br/><br/><br/><br/>
+						<button class="button" type=submit>Book reservation</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div id="reservationConfirmation"></div>
+	<script src="./js/Reservations.js"></script>
+	</body>
+</html>
+
+
+
+
+

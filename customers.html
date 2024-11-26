@@ -1,0 +1,66 @@
+<!--
+        This page allows users to write and submit a review for our restaurant(Take it cheezy).
+        Firstly, the user inputs their name (optional), selects a star rating, review(mandatory)
+        and provides the date of their review(also mandatory).
+        The submitted review is stored in localStorage and redirects to the reviews display page.
+        
+        Features used:
+        - Event listeners to handle form submission and star rating selection
+        - DOM concept to dynamically update the star rating display
+        - Form validation to ensure required fields are filled
+        - All stars (★, ☆ and 🌟) were copied from symbl.cc for an easier and aesthetic implementation
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Review</title>
+    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/logo.jpg" class="logo" />
+        <div class="nav-items">
+            <a href="./index.html" class="nav-link">Menu</a>
+            <a href="./Reservations.html" class="nav-link">Reservation</a>
+            <a href="./customers.html" class="nav-link">Reviews</a>
+            <a href="./blog.html" class="nav-link">Blog</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Leave a review🌟</h1>
+    </header>
+    <main>
+        <form id="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Add your name if you wish">
+
+            <label for="stars">Rating:</label>
+            <div id="star-rating">
+                <span class="star" data-value="1">☆</span>
+                <span class="star" data-value="2">☆</span>
+                <span class="star" data-value="3">☆</span>
+                <span class="star" data-value="4">☆</span>
+                <span class="star" data-value="5">☆</span>
+            </div>
+            <input type="hidden" id="rating" value="0">
+
+           
+<label for="review">Review:</label>
+<p id="review-error" class="error-message"></p> <!-- Error message(If user leaves it empty it shows a required field warning) -->
+<textarea id="review" name="review" required placeholder="Write your review here"></textarea>
+
+
+<label for="date">Current Date:</label>
+<p id="date-error" class="error-message"></p> <!-- Error message again -->
+<input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit</button>
+    </main>
+    <script src="./js/reviews.js"></script>
+</body>
+</html>
+

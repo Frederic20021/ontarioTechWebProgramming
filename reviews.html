@@ -1,0 +1,64 @@
+<!--
+        This page displays all the reviews submitted by users. Decided to creatre a separate HTML file to show reviews so it can be neater.
+        Reviews are loaded from localStorage, and their content includes:
+        - User name (or "Anonymous" if not provided)
+        - Star rating (1-5 stars, rendered dynamically using Unicode stars from symbl.cc)
+        - The written review
+        - The date the review was made
+        
+        Features used:
+        - DOM concept to load reviews from localStorage
+        - Rendering dynamic content using JavaScript
+        - Connection with the customers.html page using a "Write a Review >" button
+        - All stars (★ and ☆) were copied from symbl.cc for an easier and aesthetic implementation
+    -->
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Take it Cheesy</title>
+    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/logo.jpg" class="logo" />
+        <div class="nav-items">
+            <a href="./index.html" class="nav-link">Menu</a>
+            <a href="./Reservations.html" class="nav-link">Reservation</a>
+            <a href="./customers.html" class="nav-link">Reviews</a>
+            <a href="./blog.html" class="nav-link">Blog</a>
+        </div>
+    </nav>
+    <header>
+        <h1>What Our Customers Say:</h1>
+    </header>
+    <main>
+        <section id="reviews-section">
+            <div id="reviews-container">
+                <!-- hard coded existing reviews -->
+                <div class="review-item">
+                    <strong>Anonymous:</strong>
+                    <div class="stars">★★★★★</div>
+                    <p>Amazing food! Will come back for sure.</p>
+                    <small>09/13/2024</small>
+                </div>
+                <div class="review-item">
+                    <strong>Karen:</strong>
+                    <div class="stars">★☆☆☆☆</div>
+                    <p>Hate this place! We only came 5 minutes before they were about to close and they refused to attend to us.</p>
+                    <small>10/24/2024</small>
+                </div>
+            </div>
+            <!-- Button to go to the Write a Review page -->
+            <button id="write-review-btn" onclick="location.href='customers.html'">Write a Review ></button>
+        </section>
+
+        <script src="./js/reviews.js"></script>
+    </main>
+</body>
+</html>
+

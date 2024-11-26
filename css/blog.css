@@ -1,0 +1,76 @@
+body {
+    font-family: "Raleway";
+    background-color: #E1AC5D;
+}
+header {
+    text-align: center;
+    justify-items: space-between;
+    color: white;
+    background-color: #DA9732;
+    padding: 1em;
+}
+.blogList {
+    margin: 0 auto;
+}
+img {
+    border: #DA9732 solid 0.25em;
+    margin: 0.3em auto;
+    width: 30em;
+    height: 30em;
+}
+.post {
+    display: grid;
+    text-align: center;
+    width: 30em;
+    margin: 0 auto;
+    color: white;
+    font-size: 1em;
+}
+h2, h4 {
+    margin-bottom: 0.3em;
+}
+h4 {
+    margin-top: 0.7em;
+}
+
+p {
+    background-color: #DA9732;
+    margin-top: 0;
+    padding: 1em;
+}
+.buttons, .typeComment {
+    font-family: "Raleway";
+    background-color: #E1AC5D;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.buttons:hover, .typeComment:hover {
+    background-color: #dea34c;
+    font-weight: bold;
+}
+.typeComment:focus {
+    outline: none;
+}
+.typeComment::placeholder {
+    color: white;
+}
+.postLikes p, .postLikes button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0.5em;
+}
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+.comment p {
+    margin: 0;
+    padding: 0.5em;
+    flex-grow: 1;
+}

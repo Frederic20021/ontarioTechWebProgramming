@@ -1,0 +1,28 @@
+{
+    "menuData" : [
+        {
+            "name": "Cheese Burger",
+            "description": "A juicy beef patty topped with melted cheese, fresh lettuce, tomatoes, and our special sauce",
+            "price": "12.99",
+            "imageUrl": "/images/sample1.jpg"
+        },
+        {
+            "name": "Vegan Burger",
+            "description": "Plant-based patty with fresh vegetables and vegan cheese",
+            "price": "11.99",
+            "imageUrl": "/images/veganBurger.jpg"
+        },
+        {
+            "name": "Cheese Pizza",
+            "description": "Traditional pizza with tomato sauce, mozzarella, and fresh basil",
+            "price": "14.99",
+            "imageUrl": "/images/pizza.jpg"
+        },
+        {
+            "name": "Caesar Salad",
+            "description": "Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing",
+            "price": "9.99",
+            "imageUrl": "/images/salad.jpg"
+        }
+    ]
+}

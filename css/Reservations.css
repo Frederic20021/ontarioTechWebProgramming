@@ -1,0 +1,208 @@
+#choices{
+	font-size: 17px;
+	color: black;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+option{
+	font-size: 17px;
+	color: black;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+form, fieldset{
+	border: none;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    font-family: "Raleway";
+    background-color: #E1AC5D;
+}
+
+#otherMethods{
+	font-size: 20px;
+	color: white;
+	font-family: "Raleway";
+    background-color: #E1AC5D;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	box-shadow: 0 2px 2px grey;
+	padding: 5px;
+}
+
+#otherMethods p{
+	font-size: 20px;
+	color: white;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+#telephoneNum a{
+	font-size: 20px;
+	color: white;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+#address {
+	font-size: 20px;
+	color: black;
+	font-family: system-ui, -apple-system, sans-serif;
+
+}
+
+#greeting{
+	background: #d97706;
+	height: 100px;
+	align-content: center;
+	text-align: center;
+	font-family: system-ui, -apple-system, sans-serif;
+	color: white;
+}
+
+img{
+	height: auto;
+	width: 100%;
+	display: block;
+}
+
+.formAndPicture {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1400px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 1px 1px grey;
+}
+
+
+.imageFormat{
+	flex: 1;
+	max-width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.formFormat{
+	flex: 1 ;
+	padding: 20px;
+	max-width: 50%;
+	box-sizing: border-box;
+}
+
+button{
+	font-size: 25px;
+	color: white;
+	font-family: system-ui, -apple-system, sans-serif;
+	background-color: #d97706;
+}
+
+button:hover{
+	background-color: #EBAD14;
+	transform: scale(1.2); 
+}
+
+.button{
+	height: 70px;
+	width: 95%;
+}
+
+#numberOfPeople{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+#dateSelected{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+#time{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+#firstName{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+#lastName{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+#phoneNum{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+#emailAdd{
+	height:30px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 15px;
+}
+
+.date{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
+.people{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
+.firstName{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
+.lastName{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
+.phoneNum{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
+.emailAdd{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
+.formAndPicture h2{
+	margin-bottom: 20px;
+}
+
+#reservationConfirmation{
+	font-family: system-ui, -apple-system, sans-serif;
+	margin-top: 20px;
+	text-align: center;
+	box-shadow: 0 1px 1px grey;
+	font-size: 25px;
+	border: 2px solid #d97706;
+	margin: 20px auto;
+	width: 70%;
+}
+
+.time{
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 19px;
+}
+
